@@ -57,6 +57,23 @@ Teste da primeira fase do processo seletivo da Rocky para estágio.
 2 - Uma função que calcula qual é o valor total do estoque por categoria, ou seja, a soma do valor de todos os produtos em estoque de cada categoria, considerando a quantidade de cada produto. 
   </p>
   <h2><i>Resolução</i></h2>
+ <p>Para efetuar a leitura do arquivo JSON e acessar os dados, usei o require.
+  <br>
+  OBS:O require serve para importa o que foi exportado dos outros arquivos do seu projeto.</p>
+ <b>let data = require('./broken-database.json');</b>
+ 
+ <h2>1.Correção dos Nome</h2>
+ <p>Para essa correção, começaremos com um loop for passando em todo JSON para averiguar onde há caracteres diferente, e caso enontrantrasse, efuatiria a troca necessária</p>
+ <hr>
+ <h2>2.Correção do Preço</h2>
+ <p>Com a função parsefloat, estamos convertendo todos os valores, que são string para ponto flutuante.</p>
+<hr>
+ <h2>Correção do Quantidade</h2>
+ <p>Dentro da função fizemos um if com o operador not erificando a quantidade, caso não possua valor, o número 0 será atribuido.</p>
+ <hr>
+ 
+ 
+  
  
 
   
